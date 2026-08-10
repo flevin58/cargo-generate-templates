@@ -1,4 +1,4 @@
-use clap::{Parser, arg, command};
+use clap::Parser;
 
 #[derive(Parser)]
 #[command(about = "Test clap struct parser", long_about = None)]
