@@ -1,6 +1,8 @@
 # cargo-generate-templates
 A series of rust templates to use with cargo-generate.
 
+They are released under the [MIT](LICENSE) license.
+
 ## Configuration ##
 
 Add the following to your **~/.cargo/cargo-generate.toml** file:
