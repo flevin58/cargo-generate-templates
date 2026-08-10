@@ -1,4 +1,4 @@
-pub mod square;
 pub mod circle;
-pub use square::Square;
+pub mod square;
 pub use circle::Circle;
+pub use square::Square;

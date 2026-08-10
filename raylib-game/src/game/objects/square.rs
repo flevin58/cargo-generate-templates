@@ -1,6 +1,6 @@
 use crate::game::GameObject;
 use crate::game::constants::{SCREEN_HEIGHT, SCREEN_WIDTH, VELOCITY_RANGE};
-use rand::Rng;
+use rand::RngExt;
 use raylib::prelude::*;
 
 pub struct Square {

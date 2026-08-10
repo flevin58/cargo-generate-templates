@@ -1,0 +1,19 @@
+[package]
+name = "{{crate_name}}"
+version = "0.1.0"
+authors = ["{{authors}}"]
+edition = "2024"
+authors = ["{{authors}}"]
+publish = false
+repository = "https://github.com/{{gh_username}}/{{crate_name}}"
+description = "{{description}}"
+{% if license == "MIT" -%}
+license = "MIT"
+{% elsif license == "Apache-2.0" -%}
+license = "Apache-2.0"
+{% else -%}
+license = "MIT OR Apache-2.0"
+{%- endif %}
+
+[dependencies]
+clap = {version = "4.6.6", features = ["derive"]}

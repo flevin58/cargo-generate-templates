@@ -22,7 +22,7 @@ pub fn run() {
     // Initialize raylib and window
     let (mut rl, thread) = raylib::init()
         .size(SCREEN_WIDTH, SCREEN_HEIGHT)
-        .title("{{project-name}}")
+        .title("Game Template")
         .log_level(TraceLogLevel::LOG_ERROR)
         .vsync()
         .build();
