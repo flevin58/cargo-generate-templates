@@ -1,16 +1,8 @@
-use clap::Parser;
+mod args;
 
-#[derive(Parser)]
-#[command(about = "Test clap struct parser", long_about = None)]
-struct Cli {
-    #[arg(long, short, default_value = "two")]
-    two: String,
-    #[arg(long, short, default_value = "one")]
-    one: String,
-}
+use args::Cli;
 
-fn main() {
-    let cli = Cli::parse();
-    println!("two: {}", cli.two);
-    println!("one: {}", cli.one);
+fn main() -> Result<(), Box<dyn std::error::Error>> {
+    let cli = Cli::new();
+    cli.run()
 }
