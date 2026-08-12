@@ -5,16 +5,3 @@ cargo_generate_version = ">=0.9.0"
 [placeholders]
 gh_username = {type = "string", prompt = "What is the github username to publish under?"}
 description = {type = "string", prompt = "Provide a brief description of your application", default = "An application made with Rust and Clap"}
-
-[placeholders.license]
-type = "string"
-prompt = "Choose the license for your project"
-default = "all"
-choices = ["all", "MIT", "Apache-2.0"]
-
-# License files
-[conditional.'license != "MIT" && license != "all"']
-ignore = ["LICENSE-MIT"]
-
-[conditional.'license != "Apache-2.0" && license != "all"']
-ignore = ["LICENSE-APACHE"]

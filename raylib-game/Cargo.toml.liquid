@@ -6,13 +6,7 @@ authors = ["{{authors}}"]
 publish = false
 repository = "https://github.com/{{gh_username}}/{{crate_name}}"
 description = "{{description}}"
-{% if license == "MIT" -%}
 license = "MIT"
-{% elsif license == "Apache-2.0" -%}
-license = "Apache-2.0"
-{% else -%}
-license = "MIT OR Apache-2.0"
-{%- endif %}
 
 [dependencies]
 rand = "0.10.2"
