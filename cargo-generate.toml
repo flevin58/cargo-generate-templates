@@ -1,2 +1,2 @@
 [template]
-sub_templates = ["clap-application", "raylib-game"]
+sub_templates = ["clap-application", "egui-application", "raylib-game"]
